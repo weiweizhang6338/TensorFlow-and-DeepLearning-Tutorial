@@ -113,7 +113,7 @@ def basic_operation():
 		for partialValue in load_partial(value, 2):
 			# runResult = mySess.run(mul, feed_dict={value1: partialValue})
 			evalResult = mul.eval(feed_dict={value1: partialValue})
-			print('乘法(value1, value2) = ', runResult)
+			print('乘法(value1, value2) = ', evalResult)
 		# cross validation
 
 def load_from_remote():
